@@ -1,0 +1,76 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-wrap{
+    display: flex;
+    align-items: center;
+}
+.logo-wrap img{
+    width: 75px;
+}
+.logo-wrap h1{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+section#banner{
+    width: 100%;
+}
+
+section#banner h2{
+    background-color: rgb(81, 81, 208);
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    padding: 50px 10px;
+    display: block;
+}
+
+.azure-login img{
+    width: 200px;
+}
+
+main{
+    display: grid;
+    grid-template: "login ticket";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+#login-wrap{
+    grid-area: login;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ticket-wrap{
+    grid-area: ticket;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=password]{
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    min-width: 250px;
+    border-radius: 5px;
+    border: none;
+}
