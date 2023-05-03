@@ -8,6 +8,10 @@ footer {
     background-color: #2c2c2c;
 }
 
+footer a.validator{
+    margin-right: 25px;
+}
+
 ul.nav li {
     list-style: none;
 }
