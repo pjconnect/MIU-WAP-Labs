@@ -9,7 +9,8 @@ footer {
 }
 
 footer a.validator{
-    margin-right: 25px;
+    margin-right: 15px;
+    display: inline-block;
 }
 
 ul.nav li {
@@ -25,6 +26,7 @@ ul.nav li>a {
     min-width: 200px;
     text-decoration: none;
     border-radius: 5px;
+    text-align: center;
 }
 
 .upper{
@@ -36,6 +38,13 @@ h2.title{
     border-top: 5px solid rgb(217, 55, 49);
     padding-top: 5px;
     text-transform: uppercase;
+}
+.name{
+    color: rgb(44 44 44);
+    text-align: center;
+    text-shadow: 0 0 5px #a969ff78;
+    text-transform: uppercase;
+    font-size: 27px;
 }
 
 main#content {
