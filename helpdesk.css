@@ -1,76 +1,172 @@
-header{
+body{
+    background: rgb(239, 239, 239);
+}
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
 }
-.logo-wrap{
+
+nav a{
+    margin-right: 20px;
+    color: black;
+    font-weight: normal;
+}
+
+.logo-wrap {
     display: flex;
     align-items: center;
 }
-.logo-wrap img{
+
+.logo-wrap img {
     width: 75px;
 }
-.logo-wrap h1{
+
+.logo-wrap h1 {
     font-size: 20px;
     margin-left: 20px;
 }
 
-section#banner{
+section#banner {
     width: 100%;
+    background-color: rgb(81, 81, 208);
+    margin-bottom: 20px;
 }
 
-section#banner h2{
-    background-color: rgb(81, 81, 208);
+.hr{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.hr::after, .hr::before{
+    content: "";
+    border-top: 1px solid lightgray;
+    max-width: 50px;
+    width: 100%;
+    position: relative;
+    top: 10px;
+}
+.hr::before{
+}
+h1{
+    font-weight: normal;
+}
+h2{
+    margin: 0;
+    font-weight: normal;
+}
+p{
+    font-weight: normal;
+}
+section#banner h2 {
     color: white;
     font-weight: lighter;
     text-align: center;
     padding: 50px 10px;
     display: block;
+    margin: 0;
 }
 
-.azure-login img{
+.azure-login img {
     width: 200px;
 }
 
-main{
+main {
     display: grid;
-    grid-template: "login ticket";
+    grid-template-areas: "login ticket";
     grid-template-columns: 1fr 1fr;
     margin-bottom: 20px;
 }
 
-#login-wrap{
+.grid-area-1{
     grid-area: login;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid lightgray;
+}
+
+#login-wrap {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    max-width: 500px;
+    padding: 20px;
+    justify-self: center;
 }
 
-.ticket-wrap{
+.ticket-wrap {
     grid-area: ticket;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
 }
 
-input[type=text], input[type=password]{
+.form-group.inline {
+    flex-direction: row;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=text],
+input[type=password] {
     border-radius: 5px;
     padding: 10px;
     min-width: 250px;
+    border: 1px solid lightgray;
 }
 
-.btn{
+.subtitle{
+    color: gray;
+}
+.form-group{
+    margin-top: 15px;
+}
+.form-group:not(.inline) label{
+    padding-bottom: 5px;
+}
+.btn {
     background-color: black;
     color: white;
     padding: 10px 20px;
     min-width: 250px;
     border-radius: 5px;
     border: none;
+
+    margin-top: 10px;
+}
+
+.btn.sm{
+    min-width: 150px;
+    padding: 5px 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button.btn-azure.wf {
+    background-color: white;
+    border: 1px solid lightgray;
+    height: 35px;
+    border-radius: 5px;
+}
+
+button.btn-azure.wf img{
+    width: 70px;
 }
