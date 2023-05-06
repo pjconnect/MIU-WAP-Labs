@@ -154,3 +154,14 @@ ul.pref li, ol.pref li{
 .wf{
     width: 100%;
 }
+
+
+#login{
+    width: 100%;
+    max-width: 500px;
+}
+
+#login label{
+    margin-bottom: 10px;
+    display: inline-block;
+}

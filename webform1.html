@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAP | Web Forum 1</title>
+    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
@@ -13,28 +14,30 @@
 <body>
     <main class="mt-5 d-flex justify-content-center align-items-center">
         <section id="login">
-            <div class="d-flex">
-                <form method="get" action="./webform2.html" class="card">
-                    <div class="card-header">
-                        <div class="card-title">Login</div>
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <label for="username">
-                            Username
-                            <input name="username" class="form-control" id="username" type="text" placeholder="Username">
-                        </label>
-                        <label for="password">
-                            Password
-                            <input name="password" class="form-control" id="password" type="password" placeholder="Password">
-                        </label>
-                        <label for="checkout">
-                            Checkout
-                            <input class="form-check-input" id="checkout" type="checkbox">
-                        </label>
-                        <button class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-            </div>
+            <form method="get" action="./webform2.html" class="card">
+                <div class="card-header">
+                    <div class="card-title">Login</div>
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <label for="username">
+                        Username
+                        <input name="username" class="form-control" id="username" type="text" placeholder="Username">
+                    </label>
+                    <label for="password">
+                        Password
+                        <input
+                        pattern="(/d*[a-zA-Z]){10,}"
+                        name="password" class="form-control" id="password" type="password"
+                            placeholder="Password">
+                    </label>
+                    <label for="checkout">
+                        Checkout
+                        <input class="form-check-input" id="checkout" type="checkbox">
+                    </label>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>
         </section>
     </main>
 </body>
