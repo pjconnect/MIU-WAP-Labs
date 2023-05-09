@@ -21,12 +21,15 @@
                 <div class="card-body d-flex flex-column">
                     <label for="username">
                         Username
-                        <input name="username" class="form-control" id="username" type="text" placeholder="Username">
+                        <input name="username" 
+                        required
+                        class="form-control" id="username" type="text" placeholder="Username">
                     </label>
                     <label for="password">
                         Password
                         <input
-                        pattern="(/d*[a-zA-Z]){10,}"
+                        pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)[A-Za-z\d]{10,}$"
+                        required
                         name="password" class="form-control" id="password" type="password"
                             placeholder="Password">
                     </label>
