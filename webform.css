@@ -58,3 +58,7 @@ nav button{
     margin: 5px;
 }
 
+select.form-control{
+    min-width: 206px;
+}
+

@@ -20,6 +20,14 @@
                 </div>
                 <div class="card-body d-flex flex-column">
                     <label for="username">
+                        URL
+                        <input name="url" 
+                        required
+                        class="form-control" id="url" type="text"
+                        pattern="^(http://|https://)\S+"
+                        placeholder="URL">
+                    </label>
+                    <label for="username">
                         Username
                         <input name="username" 
                         required
