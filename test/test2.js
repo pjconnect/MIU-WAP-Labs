@@ -1,3 +1,7 @@
+const myFunction = require('./lab6');
+
+
+
 function askPassword(ok, fail) {
 
     let password = "abc";

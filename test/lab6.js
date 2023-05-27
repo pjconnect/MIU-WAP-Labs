@@ -110,6 +110,8 @@ function myFunction() {
   return x * x;
 }
 
+module.export = myFunction;
+
 document.write(myFunction());
 
 x = 5;

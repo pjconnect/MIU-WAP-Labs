@@ -1,0 +1,27 @@
+.logo-img {
+    width: 150px;
+}
+
+.bg-logo {
+    background-color: #f7f7f7 !important;
+}
+
+.navbar .collapse {
+    justify-content: flex-end;
+}
+
+.login-form {
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#tbodyProductList img {
+    width: 50px;
+}
+
+.purchase-wrap {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
